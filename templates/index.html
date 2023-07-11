@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Survey Page</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+
+<body>
+
+    <div class="container w-50 bg-success bg-gradient ">
+        <form action="/process" method="post">
+            <h1 class="text-center">Dojo Survery</h1>
+            
+            <!-- area to enter name -->
+            <div class="row mb-3">
+                <label for="inputEmail" class="col-sm-2 col-form-label">Your Name</label>
+                <div class="col-sm-10">
+                    <input type=text name="name" class="form-control" id="inputEmail3">
+                </div>
+            </div>
+            
+            <!-- location drop down  -->
+            <div>
+                <select name="dojo_location" class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                    <option selected>Dojo Location</option>
+                    <option value="los angeles">Los Angeles</option>
+                    <option value="san francisco">San Francisco</option>
+                    <option value="oakland">Oakland</option>
+                </select>
+            </div>
+            <!-- with select, the name attribute pulls from select vs option because the select is the actual input. The options are just different values -->
+            
+            <!-- favorite language drop down -->
+            <div>
+                <select name="favorite_language" class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                    <option selected>Favorite Languages</option>
+                    <option value="Python">Python</option>
+                    <option value="JavaScript">JavaScript</option>
+                    <option value="C+">C++</option>
+                </select>
+            </div>
+
+            <!-- Comments Text Area -->
+            <div class="form-floating">
+                <label for="floatingTextarea2">Comments</label>
+                <textarea name="comments" class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                    style="height: 100px"></textarea>
+            </div>
+
+            <div><button class="btn btn-primary mb-3 mt-3" type="submit">Submit</button></div>
+
+        </form>
+    </div>
+
+
+
+    <!-- <form action='/process' method='post'>
+            <label for='name'>Your Name:</label>
+            <input type='text' name='name' id='name'>
+            <label for='dojo_location'>Dojo Location</label>
+            <input type='text' name='dojo_location' id='dojo_location'>
+            <label for='favorite_language'>Favorite Language</label>
+            <input type='text' name='favorite_language' id='favorite_language'>
+            <label for='comments'>Comments</label>
+            <input type='text' name='comments' id='comments'>
+            <button>Submit</button>
+        </form> -->
+
+
+
+
+
+
+</body>
+
+</html>
